@@ -50,7 +50,7 @@ const Editor = ({ lang, code, socket, roomId, onCodeChange }: editorProps) => {
         language={lang}
         value={code}
         theme="vs-dark"
-        onChange={(val, ev) => handleCodeChange(ev)}
+        onChange={(_, ev) => handleCodeChange(ev)}
         onMount={(editor) => (editorRef.current = editor)}
         options={{
           lineHeight: 30,
