@@ -108,7 +108,7 @@ const EditorPage = () => {
   }
 
   return (
-    <div className="flex relative">
+    <div className="flex relative h-screen">
       <aside
         className={cn(
           "w-[300px] border-r h-screen p-4 flex flex-col max-md:absolute -left-[400px] top-0 z-30 bg-background duration-500",
@@ -147,10 +147,7 @@ const EditorPage = () => {
       </aside>
       <div className="flex-1 flex flex-col h-screen">
         {/* NAVBAR */}
-        <div className="p-4 border-b-2 flex items-center justify-between md:justify-end">
-          <div className="md:hidden pl-[100px]">
-            <Logo />
-          </div>
+        <div className="p-4 border-b-2 flex items-center justify-end">
           <div>
             <Select
               value={lang}
