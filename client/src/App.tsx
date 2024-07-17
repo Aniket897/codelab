@@ -13,7 +13,7 @@ const App = () => {
 
   const upInstance = async () => {
     let response  = await fetch("https://codelab-th59.onrender.com/health");
-    response = await response.JSON();
+    response = await response.json();
     console.log(response);
   }
 
